@@ -75,7 +75,7 @@
 
         <section id="about" class="section">
             <div class="container">
-<div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'23fZmgdxytKRLbPEEBHb'});Pixlee.addSimpleWidget({widgetId:'32810'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+<div id="pixlee_container"></div>
             </div><!-- end container -->
 
         </section><!-- end section -->
@@ -647,19 +647,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/instafeed.min.js"></script>
-    <script>
-      console.log(Instafeed)
-      var feed = new Instafeed({
-        accessToken: "1daa8dd15038bc39b8333c87cafbe168",
-        transform: function(item) {
-          var d = new Date(item.timestamp);
-          item.date = [d.getDate(), d.getMonth(), d.getYear()].join('/');
-          return item;
-        }
-      });
-
-      feed.run();
-    </script>
+    <script src="js/pixlee.js"></script>
+    <script src="js/pixlee_widget_1_0_0.js"></script>
 </body>
 </html>
